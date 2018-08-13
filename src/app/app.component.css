@@ -1,0 +1,68 @@
+
+.registration-form {
+	display:flex row;
+	border:1px solid gray;
+	padding:2px;
+	margin:5px;
+}
+
+.first-name {
+	display:flex;
+	padding:2px;
+	text-align:center;
+	box-sizing:border-box;
+}
+
+
+.first-name  p{
+	font-weight:400;	
+	font-size:20px;
+	padding:0px;
+	margin:2px 0px;
+}
+
+.heading {
+	margin:15px;
+	padding:10px;
+	color:#
+	
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+	
+	h1 {
+		font-size:20px
+	}
+	
+	.first-name  {
+		font-weight:700;
+		font-size:15px;
+		padding:5px;
+		margin:2px;
+		}
+	
+	
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+	.registration-form{
+		background-color:red;
+	}
+	
+	h1 {
+		font-size:25px
+	}
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+	.registration-form{
+		background-color:blue;
+	}
+	
+	h1 {
+		font-size:25px
+	}
+	
+}
