@@ -4,11 +4,11 @@ import { ICurrentWeather } from '../interfaces';
 import { environment } from '../../environments/environment.prod';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators'
+import { map } from 'rxjs/operators';
 
 
-export interface IWeatherService{
-  getCurrentWeather(city:string,country:string):Observable<ICurrentWeather>
+export interface IWeatherService {
+  getCurrentWeather(city: string, country: string): Observable<ICurrentWeather>
 }
 
 interface IcurrentWeatherData {
@@ -25,6 +25,7 @@ interface IcurrentWeatherData {
   dt: number,
   name: string
 }
+
 @Injectable({
   providedIn: 'root'
 })
@@ -50,7 +51,6 @@ export class WeatherService implements IWeatherService {
       temperature: this.convertKelvinToFahrenheit(data.main.temp),
       description: data.weather[0].description
     }
-
   }
 
   private convertKelvinToFahrenheit(kelvin: string): number {

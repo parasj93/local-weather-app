@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ICurrentWeather } from '../interfaces';
 import { WeatherService } from '../weather/weather.service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-current-weather',
@@ -19,7 +19,7 @@ export class CurrentWeatherComponent implements OnInit {
     description: ''
   };
 
-  constructor(private weatherService: WeatherService,private route:ActivatedRoute) {
+  constructor(private weatherService: WeatherService) {
   }
 
   ngOnInit() {
